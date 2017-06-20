@@ -7,7 +7,7 @@ title: Hexo
 subtitle:
 description:
 author: John Doe
-language:
+language: zh-CN
 timezone:
 
 # URL
@@ -63,9 +63,18 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+# theme: landscape
+theme: maupassant
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repo: https://github.com/yanghanbin-it/yanghanbin-it.github.io.git
+  branch: master
+
+archive_generator:
+  per_page: 0   # 0 处指定文章归档页面的条目数，0 为无限制。
+  yearly: false
+  monthly: false
+  daily: false
